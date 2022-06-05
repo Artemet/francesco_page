@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work</title>
+</head>
+<body>
+<style>
+    .client_day h2{
+        color: #FA1010;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .client_day p.text{
+        font-size: 20px;
+    }
+    .client_day img.header_img{
+        height: 348px;
+    }
+    .client_day h3{
+        background: #FCDA26;
+        width: fit-content;
+        color: white;
+        padding: 3px;
+    }
+    .client_day .circle{
+        background: #FD4F29;
+        width: 70px;
+        opacity: 61%;
+        height: 66px;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .client_day .circle_container p{
+        position: relative;
+        width: fit-content;
+        margin: 0;
+    }
+    .client_day .promocode{
+        border: 2px dotted #FD4F29;
+        width: fit-content;
+        padding: 5px 15px;
+        height: fit-content;
+    }
+    .client_day .information_part{
+        display: flex;
+        padding-bottom: 32px;
+    }
+    .client_day p.circle_information{
+        font-size: 20px;
+        font-weight: 200;
+        padding-left: 30px;
+    }
+    .client_day .plus{
+        color: #FD4F29;
+        opacity: 61%;
+        font-size: 40px;
+        padding-left: 23px;
+        font-weight: 600;
+    }
+    .client_day .final_p{
+        padding-top: 60px;
+        font-size: 20px;
+        text-align: center;
+        border-top: 1px solid #BCB1B1;
+        padding-bottom: 40px;
+    }
+    .client_day .menu{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .client_day .menu_container_part{
+        text-align: center;
+        font-size: 20px;
+        width: 168px;
+        font-weight: 600;
+    }
+    .client_day .menu_header_p{
+        background: #F24841;
+        color: white;
+    }
+    .client_day .menu_header_p .none{
+        display: none;
+    }
+    .client_day .menu_header_p:hover .none{
+        display: none;
+    }
+    .client_day .menu_header_p:hover .arrow_menu{
+        display: none;
+    }
+    .client_day .sub_menu p{
+        padding: 5px;
+        margin: 0;
+        border: 2px solid #D2CDCD;
+    }
+    .client_day .hide{
+        display: none;
+    }
+
+    .client_day .menu_header_p{
+        margin-bottom: 0;
+        padding: 5px;
+    }
+    .client_day .menu_header_p{
+
+    }
+    .client_day a{
+        color: black;
+        text-decoration: none;
+    }
+    .client_day .none_a{
+        color: white;
+    }
+    .client_day .hide{
+        visibility: none;
+        transition: opacity 0.3s ease-out;
+        opacity: 0;
+    }
+    .client_day .show:hover + .hide{
+        opacity: 1;
+        display: block;
+    }
+    .client_day .hide:hover{
+        display: block;
+        opacity: 1;
+    }
+    .client_day .under_line:hover{
+        text-decoration: underline;
+    }
+    .client_day .img_bottom{
+        padding-top: 170px;
+    }
+    .client_day .dop_paddind{
+        padding-top: 32px;
+    }
+</style>
+<div class="client_day">
+    <h2>Клиентские дни</h2>
+    <p class="text">Покупки выгоднее вместе с Francesco Donni!</p>
+    <div class="img">
+        <img src="res/shoes.png" alt="" class="header_img">
+    </div>
+    <p class="text">Скидка формируется из начальной скидки на товары до -50% и дополнительной скидки</p>
+    <div class="information_container">
+        <h3>Интернет-магазин</h3>
+        <div class="information_part">
+            <div class="circle_container">
+                <div class="circle"></div>
+                <p style="font-size: 32px;">до <br> -60%</p>
+            </div>
+            <p class="circle_information">Скидки на весь ассортимент до -60%.</p>
+        </div>
+        <div class="information_part">
+            <div class="circle_container">
+                <div class="circle"></div>
+                <p style="text-align: center; padding-top: 10px;">начальная <br> скидка</p>
+            </div>
+            <p class="circle_information">Скидка формируется из начальной скидки на товары до -50%</p>
+        </div>
+        <span class="plus">+</span>
+        <div class="information_part dop_paddind">
+            <div class="promocode">
+                <span>GIFT10</span>
+            </div>
+            <p class="circle_information">и дополнительной скидки по промокоду -10% <br> *промокод применяется на этапе оформления заказа. </p>
+        </div>
+        <span class="plus">+</span>
+        <div class="information_part dop_paddind">
+            <div class="circle_container">
+                <div class="circle"></div>
+                <div style="position: absolute;">
+                    <div class="img">
+                        <img src="res/card.png" alt="" style="height: 50px;">
+                    </div>
+                    <p style="font-size: 24px; margin-left: 20px; top: -15px;">-10%</p>
+                </div>
+            </div>
+            <p class="circle_information" style="padding-left: 100px;">скидка по промокоду суммируется со скидкой -10% <br> при онлайн-оплате.</p>
+        </div>
+    </div>
+    <div class="information_container">
+        <h3>Розничные Магазины</h3>
+        <div class="information_part">
+            <div class="circle_container">
+                <div class="circle"></div>
+                <span style="font-weight: 600; padding-top: 15px; position: absolute; font-size: 30px; padding-left: 20px;">%</span>
+            </div>
+            <p class="circle_information" style="padding-left: 100px;">Скидка всем держателям дисконтных карт</p>
+        </div>
+        <div class="information_part">
+            <div class="circle_container">
+                <div class="circle"></div>
+                <p style="text-align: center; padding-top: 10px;">начальная <br> скидка</p>
+            </div>
+            <p class="circle_information">Скидка формируется из начальной скидки на товары</p>
+        </div>
+        <span class="plus">+</span>
+        <div class="information_part dop_paddind">
+            <div class="img">
+                <img src="res/francesco_card.png" alt="" style="height: 72px">
+            </div>
+            <p class="circle_information">и дополнительной скидке по дисконтной карте <br> Скидка равна % накопления на карте покупателя</p>
+        </div>
+    </div>
+    <p class="final_p">Удачных покупок, Ваш Francesco Donni!</p>
+    <div class="menu_container">
+        <div class="menu">
+            <div class="menu_container_part" style="padding-right: 70px;">
+                <div class="sub_menu">
+                    <div class="show">
+                        <p class="menu_header_p" ><a href="" class="none_a under_line">для женщин</a> <span class="arrow_one arrow_menu" onclick="arrow_down(this)">►</span> <span class="none">▼</span></p>
+                    </div>
+                    <div class="hide_one hide">
+                        <a href="https://francesco.ru/catalog/zhenskaya_obuv/" class="under_line"><p>Обувь</p></a>
+                        <a href="https://francesco.ru/catalog/zhenskaya_odezhda/" class="under_line"><p>Одежда</p></a>
+                        <a href="https://francesco.ru/catalog/aksessuary_dlya_zhenshchin/" class="under_line"><p>Аксессуары</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_container_part" style="padding-right: 70px;">
+                <div class="sub_menu">
+                    <div class="show">
+                        <p class="menu_header_p" ><a href="https://francesco.ru/catalog/muzhskoe/" class="none_a under_line">для мужчин</a> <span class="arrow_menu" onclick="arrow_down(this)">►</span> <span class="none">▼</span></p>
+                    </div>
+                    <div class="hide_two hide">
+                        <a href="https://francesco.ru/catalog/muzhskaya_obuv/" class="under_line"><p>Обувь</p></a>
+                        <a href="https://francesco.ru/catalog/aksessuary_dlya_muzhchin/" class="under_line"><p>Аксессуары</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img_bottom" style="text-align: center">
+        <img src="res/francesco_information_price.JPG" alt="">
+    </div>
+</div>
+<script>
+    window.arrow_down=(get_down)=>{
+        const get_arrow = get_down.querySelector(".arrow_menu");
+            get_arrow.innerHTML = "▼";
+    }
+</script>
+</body>
+</html>
